@@ -4,9 +4,8 @@
 //start new game
 
 export const COMP_GENERATE = 'COMP_GENERATE';
-export const computerGenerate = (computerNum) => ({
+export const computerGenerate = () => ({
 	type: COMP_GENERATE,
-	computerNum
 })
 
 export const USER_GUESS = 'USER_GUESS';
