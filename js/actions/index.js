@@ -5,24 +5,17 @@
 
 export const COMP_GENERATE = 'COMP_GENERATE';
 export const computerGenerate = () => ({
-	type: COMP_GENERATE,
+	type: COMP_GENERATE
 })
 
 export const USER_GUESS = 'USER_GUESS';
-export const userGuess = userInput => ({
+export const userGuess = number => ({
 	type: USER_GUESS,
-	userInput
+	number,
+	id: Math.random()
 })
 
-export const HOT_OR_COLD = 'HOT_OR_COLD';
-export const hotCold = (computerNum, userInput) => ({
-	type: HOT_OR_COLD,
-	computerNum,
-	userInput
-}) 
-
 export const NEW_GAME = 'NEW_GAME';
-export const newgame = (correctAnswer) => ({
-	type: NEW_GAME,
-	correctAnswer
+export const newGame = () => ({
+	type: NEW_GAME
 })
